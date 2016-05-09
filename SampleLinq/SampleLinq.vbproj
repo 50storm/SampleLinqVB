@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94772846-081B-42B0-BFFB-31DE5B27DAB4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SampleLinq.My.MyApplication</StartupObject>
+    <RootNamespace>SampleLinq</RootNamespace>
+    <AssemblyName>SampleLinq</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SampleLinq.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SampleLinq.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataClasses1.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="FormIns.Designer.vb">
+      <DependentUpon>FormIns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormIns.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearch.Designer.vb">
+      <DependentUpon>FormSearch.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpd.Designer.vb">
+      <DependentUpon>FormUpd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormIns.resx">
+      <DependentUpon>FormIns.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearch.resx">
+      <DependentUpon>FormSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpd.resx">
+      <DependentUpon>FormUpd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\pdiDataSet.dailyreportsDataTable.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet.dailyreportsRow.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet.dailyreportsRowChangeEvent.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet.dailyreportsRowChangeEventHandler.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet.emailsDataTable.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet.emailsRow.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet.emailsRowChangeEvent.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet.emailsRowChangeEventHandler.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet.notesDataTable.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet.notesRow.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet.notesRowChangeEvent.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet.notesRowChangeEventHandler.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet.Table_1DataTable.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet.Table_1Row.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet.Table_1RowChangeEvent.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet.Table_1RowChangeEventHandler.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet._chksheet_daily_asr5500DataTable.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet._chksheet_daily_asr5500Row.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet._chksheet_daily_asr5500RowChangeEvent.datasource" />
+    <None Include="My Project\DataSources\pdiDataSet._chksheet_daily_asr5500RowChangeEventHandler.datasource" />
+    <None Include="My Project\DataSources\SampleLinq.My.MyApplication.datasource" />
+    <None Include="My Project\DataSources\SampleLinq.My.MySettings.datasource" />
+    <None Include="My Project\DataSources\SampleLinq.pdiDataSetTableAdapters.chksheet_daily_asr5500TableAdapter.datasource" />
+    <None Include="My Project\DataSources\SampleLinq.pdiDataSetTableAdapters.dailyreportsTableAdapter.datasource" />
+    <None Include="My Project\DataSources\SampleLinq.pdiDataSetTableAdapters.emailsTableAdapter.datasource" />
+    <None Include="My Project\DataSources\SampleLinq.pdiDataSetTableAdapters.notesTableAdapter.datasource" />
+    <None Include="My Project\DataSources\SampleLinq.pdiDataSetTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="My Project\DataSources\SampleLinq.pdiDataSetTableAdapters.TableAdapterManager.datasource" />
+    <None Include="My Project\DataSources\SampleLinq.pdiDataSetTableAdapters.Table_1TableAdapter.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

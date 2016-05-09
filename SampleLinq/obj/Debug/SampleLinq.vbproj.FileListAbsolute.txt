@@ -1,0 +1,12 @@
+c:\users\higarashi\documents\visual studio 2015\Projects\SampleLinq\SampleLinq\bin\Debug\SampleLinq.exe.config
+c:\users\higarashi\documents\visual studio 2015\Projects\SampleLinq\SampleLinq\bin\Debug\SampleLinq.exe
+c:\users\higarashi\documents\visual studio 2015\Projects\SampleLinq\SampleLinq\bin\Debug\SampleLinq.pdb
+c:\users\higarashi\documents\visual studio 2015\Projects\SampleLinq\SampleLinq\bin\Debug\SampleLinq.xml
+c:\users\higarashi\documents\visual studio 2015\Projects\SampleLinq\SampleLinq\obj\Debug\SampleLinq.Resources.resources
+c:\users\higarashi\documents\visual studio 2015\Projects\SampleLinq\SampleLinq\obj\Debug\SampleLinq.vbproj.GenerateResource.Cache
+c:\users\higarashi\documents\visual studio 2015\Projects\SampleLinq\SampleLinq\obj\Debug\SampleLinq.exe
+c:\users\higarashi\documents\visual studio 2015\Projects\SampleLinq\SampleLinq\obj\Debug\SampleLinq.xml
+c:\users\higarashi\documents\visual studio 2015\Projects\SampleLinq\SampleLinq\obj\Debug\SampleLinq.pdb
+c:\users\higarashi\documents\visual studio 2015\Projects\SampleLinq\SampleLinq\obj\Debug\SampleLinq.FormIns.resources
+c:\users\higarashi\documents\visual studio 2015\Projects\SampleLinq\SampleLinq\obj\Debug\SampleLinq.FormSearch.resources
+C:\Users\higarashi\Documents\Visual Studio 2015\Projects\SampleLinq\SampleLinq\obj\Debug\SampleLinq.FormUpd.resources
